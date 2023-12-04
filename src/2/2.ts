@@ -19,7 +19,7 @@ const getGameData = (gameLine: string) => {
   const gameId = gameLine.substring(5, colonPosition);
   const colorOccurrences = Object.entries(patterns).reduce<ColorOccurrences>(
     (acc, [color, pattern]) => {
-      const occurrences = [...gameLine.matchAll(pattern)].flatMap((c) => c);
+      const occurrences = [...gameLine.matchAll(pattern)].flat();
 
       return {
         ...acc,
