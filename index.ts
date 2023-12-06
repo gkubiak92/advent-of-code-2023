@@ -1,4 +1,4 @@
-import { getPartOneResult, getPartTwoResult } from "./src/4/4.ts";
+import { getPartOneResult, getPartTwoResult } from "./src/5/5.ts";
 
 await getPartOneResult();
 await getPartTwoResult();
